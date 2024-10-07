@@ -1,0 +1,47 @@
+npm init - initialise the project
+install import dependencies which is required
+ - https://chatgpt.com/c/66f921ec-c534-8003-a19f-1c59a75a6ec7
+
+1 - created a server and imported dependencies which is required for the project
+2- create a database MongoDb and connect through mongoose
+ - created cluster and coppied url
+ - created .env file
+ - connected with port
+
+3 - created util folder and connect db with mongoose 
+ - and call the in server - DB connect uptill this point
+
+4- now create models - basically its a schema like what are the fields and all needs to be shown
+ - we can create as many as schema we want basically we need to define the type of data 
+ - string number etc
+
+ ------------------------schema created------------------------
+
+
+ 5 - controller - business logic
+ - write registration logic
+ - then login logic and check for validation if user exists
+ - logout logic
+ - update logic
+
+ 6: create  routes
+   -  middlewares
+   - then check the apis
+   - registration api route
+   - login api route
+   - update api route
+   - logout api route
+   - checked apis on postman
+
+once logged out and if we try to update the user details then should show user not authenticated
+why because, logged out means cookies has been deleted means token is not there then it will not work.
+
+
+7: import in index.js file
+ controller - business logic
+ models - structure
+ routes - for routing
+ import - index.js file : main file
+
+8: completed all routes and checked all the apis
+- db is also working fine
