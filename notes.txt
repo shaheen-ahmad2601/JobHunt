@@ -45,3 +45,28 @@ why because, logged out means cookies has been deleted means token is not there 
 
 8: completed all routes and checked all the apis
 - db is also working fine
+
+
+
+
+
+----------------------------frontend----------------------------------------------------
+
+1: created react app usign shadcn vite app
+ - tailsind css
+ - created component folder ui 
+ - setup completed
+
+
+2: now started building navbar in shared folder 
+- shared folder things will sharable in everywhere if required
+- did conditional rendering for the login and signup / avatar logo
+- create auth folder fol login signup page
+- create routing in app.js file
+- created and designed the login and signup page
+
+3: now to get the data from login and signup
+- we can use hooks like use state etc
+- created functions to get the value from users or recruiters
+- creaated the object and defined the required fields value
+- access the object fields value in the input and radio button

@@ -1,17 +1,33 @@
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
+import Login from "./components/auth/Login";
+import Signup from "./components/auth/Signup";
+import Home from "./components/Home";
+
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+
+  {
+    path: "/signup",
+    element: <Signup />,
+  },
+  {
+    path:"/home",
+    element: <Home />,
+  }
+]);
 
 function App() {
   return (
     <>
-      <h1 className="logo">JobHunt</h1>
-      <ul className="nav-div">
-        <li>careers</li>
-        <li>contact up</li>
-        <li>about us</li>
-        <li>profile</li>
-        <li>Work</li>
-        <li>delevery profile</li>
-      </ul>
+      <RouterProvider router={appRouter} />
     </>
   );
 }
